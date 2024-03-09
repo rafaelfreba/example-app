@@ -63,7 +63,7 @@
                         <li class="list-group-item col-3">
                             <img class="img-fluid" width="30%"
                                 src="data:{{ $file->mime }};base64, {{ $file->file }}">
-                                Nome: {{$file->name}}.{{Str::of('image/')->replace('image/', '')}}
+                                Nome: {{$file->name}}
                                 Tamanho: {{round($file->size/1024) ?? 0}}KB
                         </li>
                     @endforeach
